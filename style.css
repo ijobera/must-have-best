@@ -985,8 +985,39 @@ object {
 }
 
 
-/* Custom CSS */
+/*--------------------------------------------------------------
+## Custom CSS
+--------------------------------------------------------------*/
+
 .container{
 	max-width: 980px;
 	margin: auto;
+}
+
+.site-header{
+	display: flex;
+}
+
+
+/* Navigation */
+
+.navigation{
+	background: red;
+	padding: 20px 0;
+}
+
+.navigation a{
+	color: #fff;
+}
+
+.main-navigation {
+	/* padding: 40px 0; */
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+
+.main-navigation ul li {
+	padding-right: 13px;
 }
