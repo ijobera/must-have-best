@@ -15,15 +15,14 @@
 get_header();
 ?>
 
-    
-
-	<div id="primary" class="content-area container">
-
-        <div class="front-slider">
+		<div class="front-slider">
             <?php
             echo do_shortcode('[smartslider3 slider=2]');
             ?>
         </div>
+    
+
+	<div id="primary" class="content-area container">
 
 
 		<main id="main" class="site-main">
@@ -52,6 +51,8 @@ get_header();
 				<?php endwhile; ?> <?php wp_reset_query(); /*4*/ ?>
 
 		</main><!-- #main -->
+
+		<h2>Parenting</h2>
 	</div><!-- #primary -->
 
 <?php
