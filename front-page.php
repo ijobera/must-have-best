@@ -17,13 +17,12 @@ get_header();
 
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main">
+                <?php
 
-		<div class="front-post">
-				<?php
 					query_posts('posts_per_page=3'); /*1, 2*/
 
 					if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-					<div class="col-md-6 post-margin">
+					<div class="post-margin front-post">
 
 						<div class="latest-post">
 							<?php if(has_post_thumbnail()) : ?>
@@ -34,12 +33,11 @@ get_header();
 								<?php the_time('g:i a'); ?> |
 								<?php the_time('F j, Y'); ?>
 							</p>
-						<p><?php the_excerpt(15); ?></p>
-						</div>
-
+                        <p><?php the_excerpt(15); ?></p>
+                        
+                        </div>
 					</div>
 				<?php endwhile; ?> <?php wp_reset_query(); /*4*/ ?>
-		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
