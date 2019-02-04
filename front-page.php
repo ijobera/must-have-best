@@ -15,7 +15,17 @@
 get_header();
 ?>
 
+    
+
 	<div id="primary" class="content-area container">
+
+        <div class="front-slider">
+            <?php
+            echo do_shortcode('[smartslider3 slider=2]');
+            ?>
+        </div>
+
+
 		<main id="main" class="site-main">
                 <?php
 
@@ -27,13 +37,15 @@ get_header();
 						<div class="latest-post">
 							<?php if(has_post_thumbnail()) : ?>
 									<?php the_post_thumbnail();?>
-							<?php endif; ?>
-						<div class="title"><a href="<?php the_permalink(); ?>"><?php the_title();/*3*/ ?></a></div>
-							<p>
+                            <?php endif; ?>
+                            
+                        <div class="front-title">
+						    <div class="title"><a href="<?php the_permalink(); ?>"><?php the_title();/*3*/ ?></a></div>
+							<p class="time">
 								<?php the_time('g:i a'); ?> |
 								<?php the_time('F j, Y'); ?>
-							</p>
-                        <p><?php the_excerpt(15); ?></p>
+                            </p>
+                        </div>               
                         
                         </div>
 					</div>

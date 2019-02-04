@@ -1051,3 +1051,36 @@ ul.children li:hover {
 	column-gap: 15px;
 	margin-top: 40px;
 }
+
+.site-main .title a{
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.front-post{
+	position: relative;
+}
+
+.front-post .front-title {
+	position: absolute;
+	top: 100px;
+	background: yellow;
+	padding: 10px 10px;
+}
+
+.front-post .front-title p{
+	margin: 0;
+	font-size: 13px;
+}
+
+.front-post .title a{
+	line-height: 1;
+}
+
+.front-slider{
+	margin-top: 50px;
+}
+
+
+
